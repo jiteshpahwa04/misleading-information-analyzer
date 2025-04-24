@@ -26,14 +26,14 @@ app.post('/analyze', (req, res) => {
   requestCounter++;
 
   // Return the result
-  res.json({
+  res.status(200).json({
     input: text,
     result: isPositive
   });
 });
 
 app.get("/", (req, res)=>{
-  res.status({
+  res.status(200).json({
     success: true,
     message: "Server is running"
   })
