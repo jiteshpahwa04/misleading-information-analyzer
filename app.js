@@ -19,8 +19,8 @@ app.post('/analyze', (req, res) => {
     return res.status(400).json({ error: "Text is required in the request body." });
   }
 
-  // Determine result based on counter: 3 false, 1 true, repeat
-  const isPositive = requestCounter % 4 === 3;
+  // Determine result based on counter: 3 true, 1 false, repeat
+  const isPositive = requestCounter % 4 != 0 ;
 
   // Increment counter for next request
   requestCounter++;
