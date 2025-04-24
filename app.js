@@ -1,9 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors'); // Import the cors package
 
 const app = express();
 const port = 3000;
 
+app.use(cors()); // Enable CORS for all origins
 app.use(bodyParser.json());
 
 // Counter to track request cycles
