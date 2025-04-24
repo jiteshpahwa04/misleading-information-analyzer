@@ -32,6 +32,13 @@ app.post('/analyze', (req, res) => {
   });
 });
 
+app.get("/", (req, res)=>{
+  res.status({
+    success: true,
+    message: "Server is running"
+  })
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`API listening at http://localhost:${port}`);
