@@ -1,5 +1,5 @@
 {
-  "name": "text-analyse-api",
+  "name": "misleading-analyzer-api",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
